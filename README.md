@@ -7,7 +7,7 @@
 使用以下命令运行容器，并将 `115-cookies.txt` 文件映射到容器中：
 
 ```sh
-docker run -p 8998:80 -v path/to/115-cookies.txt:/app/115-cookies.txt web_115_302_simple
+docker run -p 8998:80 -v path/to/115-cookies.txt:/app/115-cookies.txt ghcr.io/zkl2333/web-302-115-simple-docker:main
 ```
 
 ### 使用 Docker Compose 运行容器
@@ -22,7 +22,7 @@ services:
             - 8998:80
         volumes:
             - path/to/115-cookies.txt:/app/115-cookies.txt
-        image: web_115_302_simple
+        image: ghcr.io/zkl2333/web-302-115-simple-docker:main
 ```
 
 
