@@ -13,7 +13,7 @@ WORKDIR /app
 COPY web_115_302_simple.py /app/web_115_302_simple.py
 
 # 安装依赖
-RUN pip install blacksheep cachetools orjson pycryptodome
+RUN python3 -m pip install -U blacksheep cachetools orjson pycryptodome uvicorn
 
 # 暴露端口
 EXPOSE 80

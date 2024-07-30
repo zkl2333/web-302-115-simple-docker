@@ -6,6 +6,7 @@ permissions:
 on:
   push:
     branches: [main]
+    tags: ['v*'] # 监听版本标签的推送事件
   workflow_dispatch: # 手动触发配置
 
 jobs:
